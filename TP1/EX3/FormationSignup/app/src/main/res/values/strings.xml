@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Formation Sign up</string>
+    <array name="villes">
+        <item>El-Jadida</item>
+        <item>Casablanca</item>
+        <item>Rabat</item>
+        <item>Agadir</item>
+    </array>
 </resources>
