@@ -7,11 +7,11 @@
 *	Utiliser les Intents
 
 ## Exercices:
-### Ex1:[lien vers repo](github.com/younesAo)
-### Ex2:[lien vers repo](github.com/younesAo)
-### Ex3:[lien vers repo](github.com/younesAo)
+### Ex1:[lien vers repo](EX1)
+### Ex2:[lien vers repo](EX2)
+### Ex3:[lien vers repo](EX3)
 
-#### Chaque Exercice a sont propre Readme File dans son directory avec une vedio demo.
+#### Chaque Exercice a son propre Readme File dans son directory avec une vedio demo.
 
 >2024:2025
 
