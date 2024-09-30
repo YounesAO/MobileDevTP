@@ -4,5 +4,4 @@
 ### 1 - En utilisant **ConstraintLayout**
 ### 2 - En utilisant **LinearLayout**
 [Vedio demo Ex1](./HelloToastVid.mp4)
-Uploading HelloToastVid.mp4…
 
