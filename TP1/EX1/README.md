@@ -3,4 +3,4 @@
 ## L'exercice est fait en deux versions :
 ### 1 - En utilisant **ConstraintLayout**
 ### 2 - En utilisant **LinearLayout**
-![Vedio demo Ex1](./HelloToastVid.mp4)
+[Vedio demo Ex1](./HelloToastVid.mp4)
