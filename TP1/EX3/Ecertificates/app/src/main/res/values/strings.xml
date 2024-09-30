@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">E-certificates</string>
+    <string name="question1">1-MVC pattern signifie que</string>
+    <string name="question2">2-la syntaxe $[x] est permise dans JSP :</string>
+    <string name="reponse1">Multiple Versions Combined</string>
+    <string name="reponse2">Model View Controler</string>
+    <string name="reponse3">Main Value Complied</string>
+    <string name="reponse4">Mandatory Validated Controls</string>
+    <string name="YesCB">Oui</string>
+    <string name="noCB">Non</string>
+
 </resources>

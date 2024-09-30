@@ -1,18 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginTop="48dp"
+    android:orientation="vertical"
+    android:padding="21dp"
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/question1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/question1" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <CheckBox
+        android:id="@+id/res1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reponse1" />
+
+    <CheckBox
+        android:id="@+id/res2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reponse2" />
+
+    <CheckBox
+        android:id="@+id/res3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reponse3" />
+
+    <CheckBox
+        android:id="@+id/res4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reponse4" />
+
+    <TextView
+        android:id="@+id/question2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/question2" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/YesCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/YesCB" />
+
+        <RadioButton
+            android:id="@+id/noCB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/noCB" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/exitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quitter" />
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suivant" />
+
+    </LinearLayout>
+
+</LinearLayout>

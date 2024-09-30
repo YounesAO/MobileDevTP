@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Hello Toast</string>
+    <string name="count">Count</string>
+    <string name="toast">Toast</string>
 </resources>
