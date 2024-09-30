@@ -4,3 +4,6 @@
 ### 1 - En utilisant **ConstraintLayout**
 ### 2 - En utilisant **LinearLayout**
 [Vedio demo Ex1](./HelloToastVid.mp4)
+<video width="320" height="240" controls>
+  <source src="./HelloToastVid.mp4" type="video/mp4">
+</video>
