@@ -7,8 +7,7 @@
 *	Utiliser les DAO
 
 ## Exercices:
-### Ex1:[lien vers repo](github.com/younesAo)
-#### Creation d'une application des recettes de Pizza.
-
+### Creation d'une application des recettes de Pizza.
+[Vedio demo Ex1](https://github.com/YounesAO/MobileDevTP/blob/main/TP2/PizzaVedioSimulation.webm)
 >2024:2025
 
