@@ -8,6 +8,6 @@
 
 ## Exercices:
 ### Creation d'une application des recettes de Pizza.
-[Vedio demo Ex1](https://github.com/YounesAO/MobileDevTP/blob/main/TP2/PizzaVedioSimulation.webm)
+[Vedio demo Ex1](https://github.com/user-attachments/assets/bebeefa7-230a-4cd0-a99c-7cf1cd8091a9)
 >2024:2025
 
