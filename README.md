@@ -5,4 +5,5 @@
  _Ce repo contient les Tps de module Dev Mobile sur Android Studio_
 <ul>
     <li> -[X] TP 1 : Les interfaces graphiques <b>link</b></li>
+    <li> -[X] TP 2 : Les interfaces graphiques <b>link</b></li>
 </ul>
