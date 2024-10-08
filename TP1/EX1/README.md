@@ -3,8 +3,4 @@
 ## L'exercice est fait en deux versions :
 ### 1 - En utilisant **ConstraintLayout**
 ### 2 - En utilisant **LinearLayout**
-[Vedio demo Ex1](./HelloToastVid.mp4)
-
-<video width="320" height="240" controls>
-  <source src="./HelloToastVid.mp4" type="video/mp4">
-</video>
+[Vedio demo Ex1](https://github.com/user-attachments/assets/50ea6ed9-1b86-4d0d-b32d-0fc161dbcc02)
