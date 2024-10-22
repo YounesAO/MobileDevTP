@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.sny.drawerapp.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.sny.drawerapp.ui.gallery.GalleryFragment"
+        android:label="Ajouter Etudiant"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.sny.drawerapp.ui.slideshow.SlideshowFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.sny.drawerapp.ui.profile.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile">
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="nom"
+            app:argType="string" />
+        <argument
+            android:name="prenom"
+            app:argType="string" />
+        <argument
+            android:name="ville"
+            app:argType="string" />
+        <argument
+            android:name="sexe"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/editFragment"
+        android:name="com.sny.drawerapp.ui.edit.EditFragment"
+        android:label="Edit Etudiant"
+        tools:layout="@layout/fragment_edit" >
+        <argument
+            android:name="id"
+            app:argType="integer" />
+        <argument
+            android:name="nom"
+            app:argType="string" />
+        <argument
+            android:name="prenom"
+            app:argType="string" />
+        <argument
+            android:name="ville"
+            app:argType="string" />
+        <argument
+            android:name="sexe"
+            app:argType="string" />
+        <argument
+            android:name="image"
+            app:argType="string" />
+    </fragment>
+
+
+</navigation>

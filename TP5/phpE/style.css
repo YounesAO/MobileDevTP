@@ -1,0 +1,103 @@
+/* Style for the entire body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Style for the form elements */
+form {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+/* Style for table inside the form */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    padding: 20px;
+
+}
+
+td {
+    padding: 10px;
+}
+
+/* Style for input fields, select box, and file input */
+input[type="text"], select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid rebeccapurple;
+
+    box-sizing: border-box;
+}
+/* Style for submit and reset buttons */
+input[type="submit"], input[type="reset"] {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #45a049;
+}
+
+/* Style for fieldset and legend */
+fieldset {
+    border: 2px solid #ddd;
+    padding: 20px;
+}
+
+legend {
+    padding: 0 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Style for data table */
+table[border="1"] {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+img {
+    width: 50px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #2196F3;
+}
+
+a:hover {
+    color: #0b7dda;
+}

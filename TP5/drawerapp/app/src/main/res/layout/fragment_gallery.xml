@@ -1,0 +1,108 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView4"
+            android:layout_width="230dp"
+            android:layout_height="230dp"
+            android:layout_gravity="center"
+            tools:src="@mipmap/logoensaj" />
+
+        <Button
+            android:id="@+id/editImgBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="import" />
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nom : " />
+
+        <EditText
+            android:id="@+id/nomadd"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/labeprenom"
+            style="@style/textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prenom :" />
+
+        <EditText
+            android:id="@+id/prenomadd"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ville" />
+
+        <Spinner
+            android:id="@+id/villeadd"
+            style="@style/input"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:entries="@array/villes" />
+
+        <TextView
+            android:id="@+id/sexelabel"
+            style="@style/textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sexe :" />
+
+        <RadioGroup
+            android:id="@+id/sexeradio"
+            style="@style/textLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="homme" />
+
+            <RadioButton
+                android:id="@+id/f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="femme" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+    </LinearLayout>
+</ScrollView>
