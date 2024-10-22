@@ -10,11 +10,13 @@
 ---
 
 ## Vedio demo de l'application:
-[Vedio demo](https://github.com/user-attachments/assets/a953d693-a3c3-4e72-ad57-9491109b2c4a)
+[Vedio demo](https://github.com/user-attachments/assets/381b2ed9-67f3-44f2-9cbd-14f26d068816
+)
 
 ## Tester de Api PHP sur navigateur:
 Tester CRUD actions dans la version web. 
-[Vedio test API](https://github.com/user-attachments/assets/a953d693-a3c3-4e72-ad57-9491109b2c4a)
+[Vedio test API](https://github.com/user-attachments/assets/cb3e7ca2-d941-4fc4-95ff-3c5fc038b4f1
+)
 ## Vue d'ensemble du projet:
 
 Ce projet consiste à créer une application Android avec un menu de navigation (DrawerLayout). L'application permet de lister des étudiants récupérés depuis une API PHP, de les afficher dans un `RecyclerView`, et de permettre aux utilisateurs de filtrer cette liste via une barre de recherche. La bibliothèque `Volley` est utilisée pour effectuer des requêtes HTTP et récupérer les données depuis l'API.
