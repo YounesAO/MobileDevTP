@@ -8,6 +8,8 @@
 - Utiliser `Glide` pour charger et afficher des images.
 
 ---
+## structure de tp:
+#### le repo contien le projet Andoid Studio + PHP API files avec la fichier SQL pour la creation de db
 
 ## Vedio demo de l'application:
 [Vedio demo](https://github.com/user-attachments/assets/381b2ed9-67f3-44f2-9cbd-14f26d068816
