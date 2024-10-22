@@ -1,19 +1,40 @@
-# TP 5 : VOlley + Drawer APP
+# TP 5: Application Gestion des Etudiants avec Volley + Drawer et API PHP
+
 ## Objectifs:
-* Réaliser des différents types d’animations
-* Réaliser un écran de démarrage d’une application mobile
-* Comprendre l’utilisation d’un RecycleView
-* Créer les menus
-* Réaliser une RecycleView avec filtrage des données
-* Utiliser les images cerclées (CircularView, CircleImageView)
-* Utiliser la bibliothèque Glide
+- Intégrer l'API PHP pour la gestion des données.
+- Utiliser la bibliothèque Volley pour la communication réseau avec l'API.
+- Implémenter un `RecyclerView` pour afficher les données des étudiants récupérés.
+- Implémenter un filtrage dynamique des données dans le `RecyclerView`.
+- Utiliser `Glide` pour charger et afficher des images.
 
-## Rating app
-### Creation d'une application d'évaluation des marques de voitures .
-#### Demo:
-[Vedio demo RatingApp](https://github.com/user-attachments/assets/a953d693-a3c3-4e72-ad57-9491109b2c4a
-)
+---
+
+## Vedio demo de l'application:
+[Vedio demo](https://github.com/user-attachments/assets/a953d693-a3c3-4e72-ad57-9491109b2c4a)
+
+## Tester de Api PHP sur navigateur:
+Tester CRUD actions dans la version web. 
+[Vedio test API](https://github.com/user-attachments/assets/a953d693-a3c3-4e72-ad57-9491109b2c4a)
+## Vue d'ensemble du projet:
+
+Ce projet consiste à créer une application Android avec un menu de navigation (DrawerLayout). L'application permet de lister des étudiants récupérés depuis une API PHP, de les afficher dans un `RecyclerView`, et de permettre aux utilisateurs de filtrer cette liste via une barre de recherche. La bibliothèque `Volley` est utilisée pour effectuer des requêtes HTTP et récupérer les données depuis l'API.
+
+---
+
+## Fonctionnalités:
+
+- **Volley**: Intégration de la bibliothèque Volley pour effectuer des requêtes réseau et récupérer les données sous format JSON depuis une API.
+
+- **Navigation Drawer**: Utilisation de `DrawerLayout` pour gérer un menu de navigation permettant de basculer entre les fragments de l'application.
+  
+- **RecyclerView**: Affichage d'une liste d'étudiants récupérés via une API PHP. Le `RecyclerView` est utilisé dans le `HomeFragment` pour montrer ces étudiants de façon dynamique.
+
+- **Recherche et Filtrage**: Utilisation d'une barre de recherche dans la `MainActivity` pour filtrer dynamiquement les résultats affichés dans le `RecyclerView`.
 
 
->2024:2025
+- **Gestion des images**: Utilisation de la bibliothèque `Glide` pour charger et afficher les images des étudiants dans le `RecyclerView`.
 
+---
+
+
+> Année universitaire: 2024-2025
