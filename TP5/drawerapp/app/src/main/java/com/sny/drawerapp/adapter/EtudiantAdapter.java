@@ -77,7 +77,6 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.Etudia
 
                 NavController navController = Navigation.findNavController((AppCompatActivity) v.getContext(), R.id.nav_host_fragment_content_main);
 
-                // Create a bundle to pass the data to ProfileFragment
                 Bundle bundle = new Bundle();
                 bundle.putInt("id", etudiant.getId());
                 bundle.putString("nom", etudiant.getNom());
@@ -93,10 +92,12 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.Etudia
 
         return holder;
     }
+
     private Bitmap decodeBase64ToBitmap(String base64String) {
         byte[] decodedBytes = Base64.decode(base64String, Base64.DEFAULT);
         return BitmapFactory.decodeByteArray(decodedBytes, 0, decodedBytes.length);
     }
+
     @Override
     public void onBindViewHolder(@NonNull EtudiantViewHolder etudiantViewHolder, int i) {
         Log.d(TAG, "onBindView call ! " + i);
@@ -105,7 +106,7 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.Etudia
         // Use Glide to load the Bitmap
         Glide.with(context)
                 .asBitmap()
-                .load(bitmap)  // Load the decoded Bitmap
+                .load(bitmap)
                 .into(etudiantViewHolder.img);
 
         etudiantViewHolder.villeEtudiant.setText(etudiantFilter.get(i).getVille().toUpperCase());
@@ -118,16 +119,16 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.Etudia
         ItemTouchHelper.SimpleCallback itemTouchHelperCallback = new ItemTouchHelper.SimpleCallback(0, ItemTouchHelper.LEFT | ItemTouchHelper.RIGHT) {
             @Override
             public boolean onMove(@NonNull RecyclerView recyclerView, @NonNull RecyclerView.ViewHolder viewHolder, @NonNull RecyclerView.ViewHolder target) {
-                return false; // We are not implementing move
+                return false;
             }
 
             @Override
             public void onSwiped(@NonNull RecyclerView.ViewHolder viewHolder, int direction) {
                 int position = viewHolder.getAdapterPosition();
-                Etudiant etudiantToRemove = etudiantFilter.get(position); // Get the swiped Etudiant
+                Etudiant etudiantToRemove = etudiantFilter.get(position);
 
                 etudiantFilter.remove(position);
-                String url = "http://10.0.2.2/phpE/ws/deleteEtudiant.php"; // Your update URL
+                String url = "http://10.0.2.2/phpE/ws/deleteEtudiant.php";
 
                 RequestQueue queue = Volley.newRequestQueue(viewHolder.itemView.getContext());
 
@@ -155,12 +156,11 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.Etudia
                 queue.add(stringRequest);
 
 
-
                 notifyItemRemoved(position);
 
 
-                Snackbar.make(recyclerView, etudiantToRemove.getNom() +" "+etudiantToRemove.getPrenom()+" deleted", Snackbar.LENGTH_LONG)
-                        .setAction(null,null)
+                Snackbar.make(recyclerView, etudiantToRemove.getNom() + " " + etudiantToRemove.getPrenom() + " deleted", Snackbar.LENGTH_LONG)
+                        .setAction(null, null)
                         .show();
             }
 
@@ -192,7 +192,7 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.Etudia
 
         @Override
         protected FilterResults performFiltering(CharSequence charSequence) {
-            Log.d("filterby",charSequence.toString());
+            Log.d("filterby", charSequence.toString());
             etudiantFilter.clear();
             final FilterResults results = new FilterResults();
             if (charSequence.length() == 0) {
@@ -200,7 +200,7 @@ public class EtudiantAdapter extends RecyclerView.Adapter<EtudiantAdapter.Etudia
             } else {
                 final String filterPattern = charSequence.toString().toLowerCase().trim();
                 for (Etudiant p : etudiants) {
-                    if (p.getNom().toLowerCase().startsWith(filterPattern)|| p.getPrenom().toLowerCase().startsWith(filterPattern)) {
+                    if (p.getNom().toLowerCase().startsWith(filterPattern) || p.getPrenom().toLowerCase().startsWith(filterPattern)) {
                         etudiantFilter.add(p);
                     }
                 }

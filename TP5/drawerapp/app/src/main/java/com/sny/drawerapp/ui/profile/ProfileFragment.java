@@ -110,7 +110,7 @@ public class ProfileFragment extends Fragment {
     private void confirmationDeleteDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
         builder.setMessage("Are you sure you want to delete this?");
-        /***  Yes  $ $ $ ***/
+        /***  dial Yes  $ $ $ ***/
         builder.setPositiveButton("Delete", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {

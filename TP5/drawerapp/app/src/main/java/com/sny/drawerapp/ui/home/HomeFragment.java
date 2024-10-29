@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
@@ -50,6 +51,8 @@ public class HomeFragment extends Fragment {
         View root = binding.getRoot();
 
         recyclerView = binding.recyclerview;
+        Toast.makeText(getActivity().getApplicationContext(), "Response: ", Toast.LENGTH_LONG).show();
+
         /**
          * Getall etudiant and create RecycleView
          *
@@ -60,13 +63,15 @@ public class HomeFragment extends Fragment {
     }
 
     private void fetchEtudiantsFromAPI() {
-        String url = "http://10.0.2.2/phpe/ws/loadEtudiant.php";
+        String url = "http://192.168.188.1/phpe/ws/loadEtudiant.php";
         RequestQueue queue = Volley.newRequestQueue(getActivity());
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.POST, url, null,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
+                        Toast.makeText(getActivity().getApplicationContext(), "Response: " + response, Toast.LENGTH_LONG).show();
+
                         try {
                             etudiantList.clear();
                             for (int i = 0; i < response.length(); i++) {
@@ -77,7 +82,7 @@ public class HomeFragment extends Fragment {
                                 String sexe = jsonObject.getString("sexe");
                                 String ville = jsonObject.getString("ville");
                                 String image = jsonObject.getString("image");
-                                Log.d("TAG",image);
+                                Log.d("TAG","image");
                                 etudiantList.add(new Etudiant(id, nom, prenom, ville, sexe,image));
                             }
                             // Ensure notifyDataSetChanged() runs on the main UI thread
@@ -97,6 +102,8 @@ public class HomeFragment extends Fragment {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(getActivity().getApplicationContext(), "Error: " + error.getMessage(), Toast.LENGTH_LONG).show();
+
                         error.printStackTrace();
                     }
                 });
