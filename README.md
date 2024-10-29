@@ -8,4 +8,6 @@
     <li> -[X] TP 2 : ListView <b>link</b></li>
     <li> -[X] TP 4 : RecyclerView <b>link</b></li>
     <li> -[X] TP 5 : Volley <b>link</b></li>
+    <li> -[X] TP 6 : GPS & Conatct Permission <b>link</b></li>
+
 </ul>
